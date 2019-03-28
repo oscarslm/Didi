@@ -1,0 +1,546 @@
+/*-----------------------------------------------------------------------------------
+
+	Theme Name: Rentaking
+	Theme URI: http://localhost
+	Description: Sitio Web de Rentaking
+	Author: Grupo Autofin
+	Author URI: http://www.grupoautofin.com
+	Version: 1.0.0
+
+-----------------------------------------------------------------------------------*/
+
+
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * ff-basic-gothic-pro:
+ *   - http://typekit.com/eulas/00000000000000003b9b04d3
+ *   - http://typekit.com/eulas/00000000000000003b9b04d0
+ *
+ * © 2009-2019 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2019-03-28 17:01:44 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=hic7gke&ht=tk&f=8821.8834&a=16402127&app=typekit&e=css");
+
+@font-face {
+font-family:"ff-basic-gothic-pro";
+src:url("https://use.typekit.net/af/b1b413/00000000000000003b9b04d3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/b1b413/00000000000000003b9b04d3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/b1b413/00000000000000003b9b04d3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-style:normal;font-weight:700;
+}
+
+@font-face {
+font-family:"ff-basic-gothic-pro";
+src:url("https://use.typekit.net/af/83c2cb/00000000000000003b9b04d0/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/83c2cb/00000000000000003b9b04d0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/83c2cb/00000000000000003b9b04d0/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+font-style:normal;font-weight:300;
+}
+
+.tk-ff-basic-gothic-pro { font-family: "ff-basic-gothic-pro",sans-serif; }
+
+
+
+/* ----------------------------------------------------------------
+	General CSS
+-----------------------------------------------------------------*/
+
+::-moz-selection { /* Code for Firefox */
+  color: #FFFFFF;
+  background: #fc9153;
+}
+
+::selection {
+  color: #FFFFFF; 
+  background: #fc9153;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #8a8a8a;
+    font-family: ff-basic-gothic-pro,sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+strong {
+	font-family: ff-basic-gothic-pro,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+#wrapper {
+	float: none;
+	background-color: transparent;
+	position: relative;
+	overflow-x: hidden;
+}
+
+#content {
+    position: relative;
+    overflow: hidden;
+}
+
+.content-wrap {
+	position: relative;
+    padding: 80px 0;
+}
+
+.center-vertically {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bottom-vertically {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.logo-col {
+	background-color: #fc9153;
+}
+
+.call-col {
+	background-color: #000000;
+}
+
+.logo-header {
+	width: auto;
+	max-height: 90px;
+}
+
+.btn-call {
+	color: #fc9153;
+	border: 1px solid #fc9153;
+	border-radius: 0;
+	padding: 1.5em;
+	transition: 300ms;
+}
+
+.btn-call:hover {
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+
+.mobile-section {
+	width: auto;
+	min-height: 875px;
+	background-image: url('../img/home-landing.png');
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: inherit;
+}
+
+.cel {
+	background-image: url('../img/cel.png');
+	width: 417px;
+	height: 776px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#phone-content {
+	position: absolute;
+	width: 240px;
+	height: 490px;
+	margin: 0 auto;
+	text-align: center;
+	left: 110px;
+    top: 135px;
+}
+
+#list-switching li {
+    border: 1px solid #ddd;
+    margin-bottom: 1em;
+    border-radius: 4px;
+}
+
+#list-switching li a {
+	color: #ffffff;
+	font-size: 20px;
+}
+
+#list-switching li a:hover {
+	text-decoration: none;
+}
+
+#list-switching li a h3 {
+    padding: 0.5em;
+}
+
+.newscontainer {
+    display: none;
+}
+
+@media (max-width: 767px) {
+	.center-on-sm {
+		text-align: center!important;
+	}
+}
+
+
+
+/* ----------------------------------------------------------------
+	Header CSS
+-----------------------------------------------------------------*/
+
+
+
+
+
+/* ----------------------------------------------------------------
+	Slider CSS
+-----------------------------------------------------------------*/
+
+#slider {
+    position: relative;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 26px;
+    color: #FFFFFF;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.pleca-slider {
+	position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 240px;
+}
+
+.form-slider {
+	color: #FFFFFF;
+	background-image: url('../img/bg-form.png');
+	border-radius: 5px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.container-form {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.form-check-label {
+    font-size: 13px;
+    color: #939292;
+}
+
+.submit-slider {
+	background-color: #fc9153;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.title-slide {
+	color: #FFFFFF;
+	font-size: 60px;
+	font-family: ff-basic-gothic-pro,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	text-align: right;
+	line-height: 0.9;
+}
+
+.book-slider {
+	background-color: #000000;
+	padding: 1em;
+	text-align: left;
+}
+
+.book-slider h4 {
+	font-size: 26px;
+	line-height: 1;
+    margin-bottom: 0;
+}
+
+.book-text {
+	font-size: 26px;
+	text-transform: uppercase;
+	font-family: ff-basic-gothic-pro,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+ 	color: #fc9153;
+ }
+
+@media (min-width: 2101px) {
+	.swiper-slide {
+		height: 100vh;
+	}
+	.form-slider {
+		position: absolute;
+		top: 20%;
+		right: 20%;
+		max-width: 360px;
+	    z-index: 1;
+	}
+}
+
+@media (min-width: 1800px) and (max-width:2100px) {
+	.swiper-slide {
+		height: 100vh;
+	}
+	.form-slider {
+		position: absolute;
+		top: 20%;
+		right: 15%;
+		max-width: 360px;
+	    z-index: 1;
+	}
+}
+
+@media (max-width: 1799px) and (min-width: 1700px) {
+	.swiper-slide {
+		height: 100vh;
+	}
+	.form-slider {
+		position: absolute;
+		top: 20%;
+		right: 10%;
+		max-width: 360px;
+	    z-index: 1;
+	}
+}
+
+@media (max-width: 1699px) and (min-width: 1600px) {
+	.swiper-slide {
+		height: 100vh;
+	}
+	.form-slider {
+		position: absolute;
+		top: 20%;
+		right: 10%;
+		max-width: 360px;
+	    z-index: 1;
+	}
+}
+
+@media (max-width: 1599px) and (min-width: 1500px) {
+	.swiper-slide {
+		height: 100vh;
+	}
+	.form-slider {
+		position: absolute;
+		top: 20%;
+		right: 8%;
+		max-width: 360px;
+	    z-index: 1;
+	}
+}
+
+@media (max-width: 1499px) and (min-width: 1400px) {
+	.swiper-slide {
+		height: 100vh;
+	}
+	.form-slider {
+		position: absolute;
+		top: 20%;
+		right: 6%;
+		max-width: 340px;
+	    z-index: 1;
+	}
+	.container-form {
+	    padding-left: 1em;
+	    padding-right: 1em;
+	}
+	.container-form h2 {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 1399px) and (min-width: 1300px) {
+	.swiper-slide {
+		height: 100vh;
+	}
+	.form-slider {
+		position: absolute;
+		top: 20%;
+		right: 2%;
+		max-width: 340px;
+	    z-index: 1;
+	    padding: 1em;
+	}
+	.container-form {
+	    padding-left: 1em;
+	    padding-right: 1em;
+	}
+	.container-form h2 {
+		font-size: 1.5rem;
+	}
+	.book-slider {
+	    padding: 0.5em;
+	    max-width: 90%;
+	}
+}
+
+@media (max-width: 1299px) and (min-width: 1200px) {
+	.swiper-slide {
+		height: 100vh;
+	}
+	.form-slider {
+		position: absolute;
+		top: 18%;
+		right: 2%;
+		max-width: 340px;
+	    z-index: 1;
+	    padding: 1em;
+	}
+	.title-slide {
+		font-size: 50px;
+	}
+	.book-slider h4 {
+	    font-size: 24px;
+	}
+	.book-slider {
+	    padding: 0.5em;
+	    max-width: 90%;
+	}
+	.container-form {
+	    padding-left: 1em;
+	    padding-right: 1em;
+	}
+	.container-form h2 {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 1199px) and (min-width: 1100px) {
+	.swiper-slide {
+		height: 100vh;
+	}
+	.form-slider {
+		position: absolute;
+		top: 18%;
+		right: 2%;
+		max-width: 340px;
+	    z-index: 1;
+	    padding: 1em;
+	}
+	.title-slide {
+		font-size: 40px;
+	}
+	.book-slider h4 {
+	    font-size: 24px;
+	}
+	.book-slider {
+	    padding: 0.5em;
+	    max-width: 85%;
+	}
+	.container-form {
+	    padding-left: 0.5em;
+	    padding-right: 0.5em;
+	}
+	.container-form h2 {
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width: 1099px) and (min-width: 1025px) {
+	.swiper-slide {
+		height: 100vh;
+	}
+	.form-slider {
+		position: absolute;
+		top: 20%;
+		right: 1%;
+		max-width: 310px;
+	    z-index: 1;
+	    padding: 1em;
+	}
+	.title-slide {
+		font-size: 36px;
+	}
+	.book-slider h4 {
+	    font-size: 22px;
+	}
+	.book-text {
+	    font-size: 22px;
+	}
+	.book-slider {
+	    padding: 0.5em;
+	    max-width: 85%;
+	}
+	.container-form {
+	    padding-left: 0.5em;
+	    padding-right: 0.5em;
+	}
+	.container-form h2 {
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width: 1024px) and (min-width: 992px) {
+	.swiper-slide {
+		height: 80vh;
+	}
+	.form-slider {
+		background-image: none;
+		background-color: #000000;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.swiper-slide {
+		height: 70vh;
+	}
+	.pleca-slider {
+		display: none;
+	}
+	.form-slider {
+		background-image: none;
+		background-color: #000000;
+	}
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+	.swiper-slide {
+		height: 60vh;
+	}
+	.pleca-slider {
+		display: none;
+	}
+	.form-slider {
+		background-image: none;
+		background-color: #000000;
+	}
+}
+
+@media (max-width: 575px) {
+	.swiper-slide {
+		height: 50vh;
+	}
+	.pleca-slider {
+		display: none;
+	}
+	.form-slider {
+		background-image: none;
+		background-color: #000000;
+	}
+}
