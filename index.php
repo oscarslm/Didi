@@ -17,12 +17,14 @@
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
     <!-- Swiper CSS -->
     <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/animate.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="./css/custom.css">
 
     <title>Didi | Rentaking</title>
   </head>
-  <body>
+  <body class="animated fadeIn">
     
     <div id="wrapper">
 
