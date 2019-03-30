@@ -85,7 +85,7 @@ strong {
 
 .content-wrap {
 	position: relative;
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 .center-vertically {
@@ -128,7 +128,7 @@ strong {
 
 .mobile-section {
 	width: auto;
-	min-height: 875px;
+	min-height: 955px;
 	background-image: url('../img/home-landing.png');
 	background-repeat: no-repeat;
     background-position: center;
@@ -153,10 +153,26 @@ strong {
     top: 135px;
 }
 
+.legal-mobile {
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
 #list-switching li {
     border: 1px solid #ddd;
     margin-bottom: 1em;
     border-radius: 4px;
+    color: #FFFFFF;
+    transition: 300ms;
+}
+
+#list-switching li.active {
+	background-color: #fc9153;
+	border: 1px solid #fc9153;
+}
+
+#list-switching li.active img {
+	filter: brightness(0) invert(1);
 }
 
 #list-switching li a {
@@ -170,15 +186,119 @@ strong {
 
 #list-switching li a h3 {
     padding: 0.5em;
+	font-size: 20px;
 }
 
-.newscontainer {
+.hide {
     display: none;
+}
+
+.show {
+    display: block;
+}
+
+#phone-content div img {
+	padding-top: 8em;
+}
+
+a.tabLink h3 img {
+	padding-right: 0.5em;
+}
+
+@media (min-width: 2000px) {
+	.mobile-section {
+	    width: 100%;
+	    min-height: 100vh;
+	    background-repeat: no-repeat;
+	    background-position: inherit;
+	    background-size: contain;
+	}
+}
+
+@media (max-width: 1999px) and (min-width: 992px) {
+	.mobile-section {
+	    width: 100vw;
+	    min-height: 860px;
+	    background-repeat: no-repeat;
+	    background-image: url('../img/home-landing-lg.png');
+	    background-position: center;
+	    background-size: cover;
+	}
+	.legal-mobile {
+	    margin-bottom: 9em;
+	}
+}
+
+@media (min-width: 1200px) {
+	#list-switching {
+	    margin-bottom: 1em;
+	}
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+	#list-switching li a h3 {
+	    padding: 0.4em;
+	}
+	#mobile-section {
+	    min-height: 830px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+	.form-group {
+	    width: 30%;
+	    float: left;
+	    margin: 0 0.8em;
+	}
+	div.form-check {
+		width: 100%;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.mobile-section {
+		margin-top: 3em;
+		padding: 2em;
+		width: 100%;
+		min-height: 100%;
+		background-image: none;
+		background-color: #000000;
+		border-top: 1em solid #fc9153;
+    	border-bottom: 1em solid #fc9153;
+        color: #FFFFFF;
+	}
+	#list-switching li a h3 {
+	    padding: 0.2em;
+	    font-size: 1.3rem;
+	}
+	.form-group {
+	    width: 30%;
+	    float: left;
+	    margin: 0.5em;
+	}
+	div.form-check {
+		width: 100%;
+	}
 }
 
 @media (max-width: 767px) {
 	.center-on-sm {
 		text-align: center!important;
+	}
+	.mobile-section {
+		margin-top: 3em;
+		padding: 2em;
+		width: 100%;
+		min-height: 100%;
+		background-image: none;
+		background-color: #000000;
+		border-top: 1em solid #fc9153;
+    	border-bottom: 1em solid #fc9153;
+    	color: #FFFFFF;
+	}
+	#list-switching li a h3 {
+	    padding: 0.2em;
+	    font-size: 1.1rem;
 	}
 }
 
@@ -188,7 +308,16 @@ strong {
 	Header CSS
 -----------------------------------------------------------------*/
 
-
+@media (max-width: 576px) {
+	.logo-header {
+	    max-height: 55px;
+	}
+	.btn-call {
+	    border: 0;
+	    padding: 0.5em;
+	    font-size: 0.9rem;
+	}
+}
 
 
 
@@ -296,7 +425,7 @@ strong {
 	}
 	.form-slider {
 		position: absolute;
-		top: 20%;
+		top: 15%;
 		right: 20%;
 		max-width: 360px;
 	    z-index: 1;
@@ -309,7 +438,7 @@ strong {
 	}
 	.form-slider {
 		position: absolute;
-		top: 20%;
+		top: 15%;
 		right: 15%;
 		max-width: 360px;
 	    z-index: 1;
@@ -322,7 +451,7 @@ strong {
 	}
 	.form-slider {
 		position: absolute;
-		top: 20%;
+		top: 15%;
 		right: 10%;
 		max-width: 360px;
 	    z-index: 1;
@@ -335,7 +464,7 @@ strong {
 	}
 	.form-slider {
 		position: absolute;
-		top: 20%;
+		top: 15%;
 		right: 10%;
 		max-width: 360px;
 	    z-index: 1;
@@ -348,7 +477,7 @@ strong {
 	}
 	.form-slider {
 		position: absolute;
-		top: 20%;
+		top: 15%;
 		right: 8%;
 		max-width: 360px;
 	    z-index: 1;
@@ -361,7 +490,7 @@ strong {
 	}
 	.form-slider {
 		position: absolute;
-		top: 20%;
+		top: 15%;
 		right: 6%;
 		max-width: 340px;
 	    z-index: 1;
@@ -381,7 +510,7 @@ strong {
 	}
 	.form-slider {
 		position: absolute;
-		top: 20%;
+		top: 10%;
 		right: 2%;
 		max-width: 340px;
 	    z-index: 1;
@@ -406,7 +535,7 @@ strong {
 	}
 	.form-slider {
 		position: absolute;
-		top: 18%;
+		top: 10%;
 		right: 2%;
 		max-width: 340px;
 	    z-index: 1;
@@ -437,7 +566,7 @@ strong {
 	}
 	.form-slider {
 		position: absolute;
-		top: 18%;
+		top: 10%;
 		right: 2%;
 		max-width: 340px;
 	    z-index: 1;
@@ -468,7 +597,7 @@ strong {
 	}
 	.form-slider {
 		position: absolute;
-		top: 20%;
+		top: 10%;
 		right: 1%;
 		max-width: 310px;
 	    z-index: 1;
@@ -494,6 +623,9 @@ strong {
 	.container-form h2 {
 		font-size: 1.3rem;
 	}
+	.pleca-slider {
+	    height: 100px;
+	}
 }
 
 @media (max-width: 1024px) and (min-width: 992px) {
@@ -503,6 +635,12 @@ strong {
 	.form-slider {
 		background-image: none;
 		background-color: #000000;
+	}
+	.container-form h2 {
+	    padding-top: 0.5em;
+	}
+	.pleca-slider {
+	    height: 100px;
 	}
 }
 
@@ -530,6 +668,16 @@ strong {
 		background-image: none;
 		background-color: #000000;
 	}
+	.title-slide {
+	    font-size: 38px;
+	    line-height: 1;
+	}
+	.book-slider {
+	    padding: 0.5em;
+	}
+	.book-slider h4 {
+	    font-size: 22px;
+	}
 }
 
 @media (max-width: 575px) {
@@ -542,5 +690,15 @@ strong {
 	.form-slider {
 		background-image: none;
 		background-color: #000000;
+	}
+	.title-slide {
+	    font-size: 38px;
+	    line-height: 1;
+	}
+	.book-slider {
+	    padding: 0.5em;
+	}
+	.book-slider h4 {
+	    font-size: 22px;
 	}
 }

@@ -48,7 +48,7 @@
           <div class="swiper-wrapper">
               <div class="swiper-slide" style="background-image:url('img/slider/1.jpg')">
                 <div class="container">
-                  <div class="row">
+                  <div class="row animated slideInLeft">
                     <div class="col-lg-9">
                       <div class="row bottom-vertically">
                         <div class="col">
@@ -73,27 +73,33 @@
           <div class="swiper-button-prev swiper-button-white"></div>
         </div><!--.swiper-container-->
       </section>
-      <div class="form-slider">
+      <div class="form-slider animated slideInRight">
         <div class="container-form mt-5 mb-4">
           <h2 class="text-center">Déjanos tus datos y te contactaremos</h2>
         </div>
-        <form>
+        <form method="POST" id="contact-form" class="needs-validation" novalidate>
           <div class="container-form">
             <div class="form-group mb-4">
-              <input type="text" name="name" class="form-control form-control-lg" placeholder="Nombre">
+              <input type="text" name="name" class="form-control form-control-lg" placeholder="Nombre" required>
+              <div class="valid-feedback">¡Perfecto!</div>
+              <div class="invalid-feedback">Por favor, captura un nombre.</div>
             </div>
             <div class="form-group mb-4">
-              <input type="text" name="phone" class="form-control form-control-lg" placeholder="Teléfono">
+              <input type="text" name="phone" class="form-control form-control-lg" placeholder="Teléfono" required>
+              <div class="valid-feedback">¡Perfecto!</div>
+              <div class="invalid-feedback">Por favor, captura un teléfono.</div>
             </div>
             <div class="form-group mb-4">
-              <input type="email" name="email" class="form-control form-control-lg" placeholder="Email">
+              <input type="email" name="email" class="form-control form-control-lg" placeholder="Email" required>
+              <div class="valid-feedback">¡Perfecto!</div>
+              <div class="invalid-feedback">Por favor, captura un correo.</div>
             </div>
             <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="checkForm">
+              <input type="checkbox" class="form-check-input" id="checkForm" required>
               <label class="form-check-label" for="checkForm">Acepto Términos y Condiciones, así mismo confirmo que he leído y aceptado el Aviso de Privacidad.</label>
             </div>
           </div>
-          <button class="btn btn-block submit-slider">Enviar</button>
+          <button class="btn btn-block submit-slider" type="submit">Enviar</button>
         </form>
       </div><!--.form-slider-->
       
@@ -101,7 +107,7 @@
         
         <div class="content-wrap">
 
-          <div class="container">
+          <div class="container clearfix">
             
             <h4 class="text-center">Te ofrecemos el <strong>pago inicial más bajo del mercado</strong>,<br>a una <strong>renta mensual de 210 semanas</strong> con el derecho de uso de tu auto.</h4>
 
@@ -109,30 +115,64 @@
 
           <div class="mobile-section">
             <div class="container">
-              <div class="row center-vertically">
-                <div class="col-lg-5">
+              <div class="row bottom-vertically">
+                <div class="col-lg-5 d-none d-sm-none d-md-none d-lg-block d-xl-block">
                   <div class="cel">
                     <div id="phone-content">
-                      <div id="tab1" class="newscontainer tab1">a</div>
-                      <div id="tab2" class="newscontainer tab2">b</div>
-                      <div id="tab3" class="newscontainer tab3">c</div>
-                      <div id="tab4" class="newscontainer tab4">d</div>
-                      <div id="tab5" class="newscontainer tab5">e</div>
-                    </div>
-                  </div>
-                </div>
+                      <div id="tab1" class="hide show tab1">
+                        <img src="./img/sin-enganche.png" alt="Sin enganche">
+                      </div>
+                      <div id="tab2" class="hide tab2">
+                        <img src="./img/sin-aval.png" alt="Sin aval">
+                      </div>
+                      <div id="tab3" class="hide tab3">
+                        <img src="./img/flexibilidad.png" alt="Flexibilidad">
+                      </div>
+                      <div id="tab4" class="hide tab4">
+                        <img src="./img/seguro-placas-y-tenencia.png" alt="Seguro, placas y tenencia">
+                      </div>
+                      <div id="tab5" class="hide tab5">
+                        <img src="./img/grandes-beneficios.png" alt="Grandes beneficios">
+                      </div>
+                    </div><!--#phone-content-->
+                  </div><!--.cel-->
+                </div><!--.col-lg-5-->
                 <div class="col-lg-7">
-                  <ul class="list-unstyled" id="list-switching">
-                    <li><a id="information-1" class="tabLink tab1" href="#tab1"><h3 class="mb-0"><img src="./img/caret-left.png" /> Sin enganche.</h3></a></li>
+                  <h3 class="d-sm-block d-md-block d-lg-none d-xl-none text-center mb-5">Obtén excelentes beneficios:</h3>
+                  <ul class="list-unstyled d-none d-sm-none d-md-none d-lg-block d-xl-block" id="list-switching">
+                    <li class="active"><a id="information-1" class="tabLink tab1" href="#tab1"><h3 class="mb-0"><img src="./img/caret-left.png" /> Sin enganche.</h3></a></li>
                     <li><a id="information-2" class="tabLink tab2" href="#tab2"><h3 class="mb-0"><img src="./img/caret-left.png" /> Sin aval*</h3></a></li>
                     <li><a id="information-3" class="tabLink tab3" href="#tab3"><h3 class="mb-0"><img src="./img/caret-left.png" /> Flexibilidad con Buró de Crédito.</h3></a></li>
                     <li><a id="information-4" class="tabLink tab4" href="#tab4"><h3 class="mb-0"><img src="./img/caret-left.png" /> Seguro, placas y tenencia incluidos.</h3></a></li>
                     <li><a id="information-5" class="tabLink tab5" href="#tab5"><h3 class="mb-0"><img src="./img/caret-left.png" /> Grandes beneficios por el cumplimiento.**</h3></a></li>
                   </ul>
-                </div>
-              </div>
+                  <div class="row d-lg-none d-xl-none mb-5" align="center">
+                    <div class="col-6 col-sm-4">
+                      <img src="./img/sin-enganche.png" alt="Sin enganche">
+                      <h5>Sin enganche.</h5>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                      <img src="./img/sin-aval.png" alt="Sin enganche">
+                      <h5>Sin aval.</h5>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                      <img src="./img/flexibilidad.png" alt="Sin enganche">
+                      <h5>Flexibilidad.</h5>
+                    </div>
+                    <div class="col-6 col-sm-4 offset-md-2 offset-sm-2">
+                      <img src="./img/seguro-placas-y-tenencia.png" alt="Seguro, placas y tenencia">
+                      <h5>Seguro, placas y tenencia.</h5>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                      <img src="./img/grandes-beneficios.png" alt="Grandes beneficios">
+                      <h5>Grandes beneficios.</h5>
+                    </div>
+                  </div>
+                  <p class="legal-mobile">*No aplica para clientes flotilleros. **Aplican por el cumplimiento de servicios, productividad, buen manejo y pagos puntuales.</p>
+                </div><!--.col-lg-7-->
+              </div><!--.row-->
             </div><!--.container-->
-          </div>
+          </div><!--.mobile-section-->
           
         </div><!--.content-wrap-->
 
